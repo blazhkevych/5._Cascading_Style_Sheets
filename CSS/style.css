@@ -1,0 +1,43 @@
+body {
+	background-image: url(anim.gif);
+	color: #fffb7e;
+	/* отступ слева, сверху, справа */
+	padding: 40px 40px 40px;
+	text-align: justify;
+}
+
+h1 {
+	font-style: italic;
+	font-family: 'Times New Roman', Times, serif;
+	/* межсимвольный интервал */
+	letter-spacing: 1em;
+	border-color: #fffb7e;
+	/* рамка вокруг текста */
+	border: 4px solid #fffb7e;
+	/* по центру */
+	text-align: center;
+	border-style: double;
+	/* отключить правый и левый бордер */
+	border-right: none;
+	border-left: none;
+}
+
+p {
+	/* шрифт Roboto*/
+	font-family: 'Roboto', sans-serif;	
+	/* розовая рамка вокруг текста из точек */
+	border: 2px dotted #fd00fe;
+	/* отступ вокруг текста */
+	padding: 10px 10px 10px 10px;
+	/* абзац */
+	text-indent: 2em;
+	/* уменьшить толщину букв */
+	/* font-size: 0.9em; */
+}
+
+span {
+	font-style: italic;
+	/* межсимвольный интервал */
+	letter-spacing: 0.5em;
+	font-weight: bold;
+}

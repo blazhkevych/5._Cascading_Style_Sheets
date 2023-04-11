@@ -5,22 +5,121 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Menu</title>
+	<style>
+		.sidebar {
+			/* Ширина бокового меню */
+			width: 200px;
+			/* Высота бокового меню */
+			height: 100%;
+			/* Цвет фона бокового меню */
+			background-color: #f1f1f1;
+			/* Фиксированное положение */
+			position: fixed;
+			/* Отступ сверху */
+			top: 0;
+			/* Отступ слева */
+			left: 0;
+			/* Отключить горизонтальную прокрутку */
+			overflow-x: hidden;
+			/* Отступ сверху для контента */
+			padding-top: 60px;
+		}
+
+		.sidebar ul {
+			/* Убрать маркеры списка */
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.sidebar ul li {
+			/* Отступ внутри пунктов списка */
+			padding: 10px;
+			/* Размер шрифта */
+			font-size: 18px;
+			/* Разделительные линии между пунктами списка */
+			border-bottom: 1px solid #ccc;
+		}
+
+		.sidebar ul li img {
+			/* Ширина изображения */
+			width: 30px;
+			/* Высота изображения */
+			height: 30px;
+			/* Отступ между изображением и текстом */
+			margin: 10px;
+			/* центрировать изображение по вертикали и горизонтали */
+			vertical-align: middle;
+		}
+
+		h1 {
+			/* Отступ сверху */
+			margin-top: 0;
+			/* Отступ слева */
+			margin-left: 10px;
+			/* Размер шрифта */
+			font-size: 20px;
+			/* Цвет текста */
+			color: #000;
+		}
+
+		#menu-toggle {
+			position: fixed;
+			top: 20px;
+			left: 20px;
+			z-index: 1;
+			/* поместить над меню */
+			cursor: pointer;
+		}
+
+		#menu-toggle span {
+			display: block;
+			width: 30px;
+			height: 5px;
+			margin: 5px 0;
+			background-color: #000;
+		}
+
+		#content {
+			/* задать отступ справа от меню */
+			margin-left: 200px;
+		}
+	</style>
 </head>
 
 <body>
 
-	<h1>Menu</h1>
+	<div id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
 
-	<ul>
-		<li style="list-style-image: url(./edit.png)">EDIT
-		</li>
-	<li>EDIT</li>
-	<li>FAVORITES</li>
-	<li>HISTORY</li>
-	<li>SECURITY</li>
-	<li>SETTINGS</li>
-	</ul>
+<div class="sidebar">
+    <h1>MENU</h1>
+    <ul>
+        <li><img src="./edit.png" alt="Edit">EDIT</li>
+        <li><img src="./favorites.png" alt="Favorites">FAVORITES</li>
+        <li><img src="./history.png" alt="History">HISTORY</li>
+        <li><img src="./security.png" alt="Security">SECURITY</li>
+        <li><img src="./settings.png" alt="Settings">SETTINGS</li>
+    </ul>
+</div>
+
+	<div>
+		Task to practice CSS3, style, and div.
+
+		What is Lorem Ipsum?
+
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+		been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+		a galley of type and scrambled it to make a type specimen book. It has survived not only five
+		centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+		popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+		passages, and more recently vyith desktop publishing software like Aldus PageMaker including
+		versions of Lorem Ipsum.
+	</div>
 
 </body>
 

@@ -2,112 +2,59 @@
 <html lang="en">
 
 <head>
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Menu</title>
-	<style>
-		.sidebar {
-			/* Ширина бокового меню */
-			width: 200px;
-			/* Высота бокового меню */
-			height: 100%;
-			/* Цвет фона бокового меню */
-			background-color: #f1f1f1;
-			/* Фиксированное положение */
-			position: fixed;
-			/* Отступ сверху */
-			top: 0;
-			/* Отступ слева */
-			left: 0;
-			/* Отключить горизонтальную прокрутку */
-			overflow-x: hidden;
-			/* Отступ сверху для контента */
-			padding-top: 60px;
-		}
 
-		.sidebar ul {
-			/* Убрать маркеры списка */
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-		}
+	<link rel="stylesheet" href="style.css">
 
-		.sidebar ul li {
-			/* Отступ внутри пунктов списка */
-			padding: 10px;
-			/* Размер шрифта */
-			font-size: 18px;
-			/* Разделительные линии между пунктами списка */
-			border-bottom: 1px solid #ccc;
-		}
-
-		.sidebar ul li img {
-			/* Ширина изображения */
-			width: 30px;
-			/* Высота изображения */
-			height: 30px;
-			/* Отступ между изображением и текстом */
-			margin: 10px;
-			/* центрировать изображение по вертикали и горизонтали */
-			vertical-align: middle;
-		}
-
-		h1 {
-			/* Отступ сверху */
-			margin-top: 0;
-			/* Отступ слева */
-			margin-left: 10px;
-			/* Размер шрифта */
-			font-size: 20px;
-			/* Цвет текста */
-			color: #000;
-		}
-
-		#menu-toggle {
-			position: fixed;
-			top: 20px;
-			left: 20px;
-			z-index: 1;
-			/* поместить над меню */
-			cursor: pointer;
-		}
-
-		#menu-toggle span {
-			display: block;
-			width: 30px;
-			height: 5px;
-			margin: 5px 0;
-			background-color: #000;
-		}
-
-		#content {
-			/* задать отступ справа от меню */
-			margin-left: 200px;
-		}
-	</style>
 </head>
 
 <body>
 
-	<div id="menu-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-
-<div class="sidebar">
-    <h1>MENU</h1>
-    <ul>
-        <li><img src="./edit.png" alt="Edit">EDIT</li>
-        <li><img src="./favorites.png" alt="Favorites">FAVORITES</li>
-        <li><img src="./history.png" alt="History">HISTORY</li>
-        <li><img src="./security.png" alt="Security">SECURITY</li>
-        <li><img src="./settings.png" alt="Settings">SETTINGS</li>
-    </ul>
-</div>
-
-	<div>
+	<section class="menu">
+		<!-- Заголовок меню -->
+		<a href="#" class="menu__header">MENU</a>
+		<!-- Основное меню -->
+		<ul>
+			<!-- Элемент меню -->
+			<li>
+				<!-- Ссылка меню -->
+				<a href="#" class="menu__link link">
+					<img src="edit.png" alt="edit" />
+					<span>EDIT</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="menu__link link">
+					<img src="favorites.png" alt="favorites" />
+					<span>FAVORITES</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="menu__link link">
+					<img src="history.png" alt="history" />
+					<span>HISTORY</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="menu__link link">
+					<img src="security.png" alt="security" />
+					<span>SECURITY</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="menu__link link">
+					<img src="settings.png" alt="settings" />
+					<span>SETTINGS</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<section class="content">
 		Task to practice CSS3, style, and div.
 
 		What is Lorem Ipsum?
@@ -119,8 +66,7 @@
 		popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
 		passages, and more recently vyith desktop publishing software like Aldus PageMaker including
 		versions of Lorem Ipsum.
-	</div>
-
+	</section>
 </body>
 
 </html>

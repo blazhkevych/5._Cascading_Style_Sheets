@@ -94,3 +94,8 @@ body {
 	height: 100%;
 	background-color: #ffa000;
 }
+
+.menu li {
+	list-style-type: none;
+	margin-left: -15px;
+}
